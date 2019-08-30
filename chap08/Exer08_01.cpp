@@ -5,7 +5,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
-istream& read(istream& is)
+istream & read(istream & is)
 {
     string word;
     while(!is.eof())
@@ -16,6 +16,7 @@ istream& read(istream& is)
     is.clear();
     return is;
 }
+
 int main()
 {
     read(cin);
