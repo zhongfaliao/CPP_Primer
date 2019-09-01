@@ -9,7 +9,7 @@ using std::cout;
 using std::endl;
 using std::string;
 using std::vector;
-istream& restoreData(ifstream& is, const string &ifile, vector<string> &v)
+istream & restoreData(ifstream & is, const string & ifile, vector<string> & v)
 {
     string str;
     is.open(ifile);
@@ -22,7 +22,7 @@ istream& restoreData(ifstream& is, const string &ifile, vector<string> &v)
     }
     return is;
 }
-int main(int argc, char* argv[])
+int main(int argc, char * argv[])
 {
     ifstream in;
     vector<string> vec;
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
         restoreData(in, argv[1], vec);
     }
     if(!vec.empty())
-        for(const auto &s : vec)
+        for(const auto & s : vec)
             cout << s << endl;
     return 0;
 }
