@@ -16,7 +16,7 @@ istream& restoreData(ifstream& is, const string &ifile, vector<string> &v)
     is.open(ifile);
     if(is)
     {
-        while(is >> str)
+        while(is >> str) // the difference is in this line compared to Exercise8_4
         {
             v.push_back(str);
         }
