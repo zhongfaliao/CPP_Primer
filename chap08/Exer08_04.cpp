@@ -30,6 +30,14 @@ int main(int argc, char * argv[])
     {
         restoreData(in, argv[1], vec);
     }
+    
+    /*ifstream in;
+	string filepath = 
+		"C:\\Users\\zhong\\source\\repos\\Exercise_8_4\\Exercise_8_4\\my_input_file.txt";
+	vector<string> vec;
+
+	restoreData(in, filepath, vec);*/
+    
     if(!vec.empty())
         for(const auto & s : vec)
             cout << s << endl;
